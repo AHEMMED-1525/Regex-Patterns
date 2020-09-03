@@ -1,6 +1,6 @@
 #!/bin/bash -x
 read -p "Enter your paswword " password
-rejex=^[A-Z]{1}[a-z]{7}$
+rejex=^[A-Z]{1}[a-z0-9@#!]{7}$
 if [[ $password =~ $rejex ]]
 then
 	echo "The valid password $password"
