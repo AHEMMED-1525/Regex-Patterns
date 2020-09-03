@@ -1,6 +1,6 @@
 #!/bin/bash -x
 read -p "Enter your password " password
-rejex=^[a-z]{8}$
+rejex=^[a-zA-Z0-9@#!]{8}$
 if [[ $password =~ $rejex ]]
 then
 	echo "$password is a valid password"
